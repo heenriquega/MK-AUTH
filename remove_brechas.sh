@@ -1,3 +1,5 @@
+#!/bin/sh
+
 mv /opt/mk-auth/retorno/lndex.php /opt/mk-auth/retorno/index.php
 rm -rf /opt/mk-auth/retorno/[1234567890]*.php
 rm -rf /opt/mk-auth/libs/dompdf/[1234567890]*.php
