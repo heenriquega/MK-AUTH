@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /opt/mk-auth/admin/scripts
-wget https://raw.githubusercontent.com/heenriquega/mk-auth/main/remove_brechas.sh
+wget -q --show-progress https://raw.githubusercontent.com/heenriquega/mk-auth/main/remove_brechas.sh
 chmod a+x remove_brechas.sh
 chmod 777 remove_brechas.sh
 ./remove_brechas.sh
