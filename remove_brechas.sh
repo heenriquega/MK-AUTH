@@ -18,5 +18,7 @@ rm -rf phpinfo53.php
 rm -rf phpinfo54.php
 wget https://raw.githubusercontent.com/heenriquega/mk-auth/main/phpinfo53.php
 wget https://raw.githubusercontent.com/heenriquega/mk-auth/main/phpinfo54.php
+cd /opt/mk-auth/admin
+rm -rf logout.php
+wget https://raw.githubusercontent.com/heenriquega/mk-auth/main/logout.php
 service apache2 restart
-
