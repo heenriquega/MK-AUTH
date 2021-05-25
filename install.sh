@@ -3,7 +3,7 @@ clear
 cron1="0 3,15 * * * /opt/mk-auth/admin/scripts/new_version.sh"
 cron2="0 0 1 * * /opt/mk-auth/admin/scripts/limpa_logs.sh"
 
-echo -e "\033[05;31m                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
@@ -21,22 +21,22 @@ wget -q --show-progress https://github.com/heenriquega/mk-auth/raw/main/limpa_lo
 chmod a+x limpa_logs.sh
 chmod 777 limpa_logs.sh
 clear
-echo "                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                             \033[01;32mDOWNLOADS CONCLUIDOS\033[01;37m"
 echo ""
 sleep 2
 clear
-echo "                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                         \033[01;32mGENDANDO CRON DOS ARQUIVOS\033[01;37m"
@@ -46,11 +46,11 @@ sleep 3
 (crontab -l ; echo "$cron1")| crontab -
 (crontab -l ; echo "$cron2")| crontab -
 clear
-echo "                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                                  FINALIZADO!"
@@ -64,11 +64,11 @@ read n
 case $n in
   1) 
 clear
-echo "                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                         VAMOS REINICIAR SEU SISTEMA!"
@@ -77,11 +77,11 @@ reboot -n
 ;;
   2)
 clear
-echo "                        __   ___   _  ___  ____ _____ "
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                        \033[01;32mYHOST\033[01;37m AGRADECE A PREFERENCIA!!"
