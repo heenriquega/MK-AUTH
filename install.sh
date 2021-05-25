@@ -58,6 +58,7 @@ echo "                    RECOMENDAMOS QUE REINICIE SEU SERVIDOR"
 echo "                        DESEJA REINICIAR SEU SERVIDOR ?"
 echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA E "
 echo "                               DESEJA \033[01;32m2\033[01;37m PARA SAIR"
+echo "                        DIGITE A OPÇÃO E APERTE ENTER"
 echo ""
 read n
 case $n in
