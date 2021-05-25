@@ -3,11 +3,11 @@ clear
 cron1="0 3,15 * * * /opt/mk-auth/admin/scripts/new_version.sh"
 cron2="0 0 1 * * /opt/mk-auth/admin/scripts/limpa_logs.sh"
 
-echo "                        __   ___   _  ___  ____ _____ "
+echo -e "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
 echo "                         \ V /| |_| | | | \___ \ | | "
 echo "                          | | |  _  | |_| /___) || | "
-echo "                          |_| |_| |_|\___/|____/ |_| "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                       \033[01;32mFAZENDO O DOWNLOAD DOS ARQUIVOS\033[01;37m"
