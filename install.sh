@@ -85,8 +85,7 @@ echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
 echo "                        \033[01;32mYHOST\033[01;37m AGRADECE A PREFERENCIA!!"
+sleep 3
 mk-auth
 ;;
 esac
-sleep 3
-clear
