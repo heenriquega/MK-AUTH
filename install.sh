@@ -10,7 +10,7 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
-echo "                       FAZENDO O DOWNLOAD DOS ARQUIVOS"
+echo "                       \033[01;32mFAZENDO O DOWNLOAD DOS ARQUIVOS\033[01;37m"
 cd /opt/mk-auth/admin/scripts
 rm -rf new_version.sh
 rm -rf limpa_logs.sh
@@ -28,7 +28,7 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
-echo "                             DOWNLOADS CONCLUIDOS"
+echo "                             \033[01;32mDOWNLOADS CONCLUIDOS\033[01;37m"
 echo ""
 sleep 2
 clear
@@ -39,7 +39,7 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
-echo "                         GENDANDO CRON DOS ARQUIVOS"
+echo "                         \033[01;32mGENDANDO CRON DOS ARQUIVOS\033[01;37m"
 echo ""
 sleep 3
 (crontab -r)
@@ -53,12 +53,12 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
-echo "                         FINALIZANDO POR FAVOR AGUARDE"
+echo "                                  FINALIZADO!"
 echo "                    RECOMENDAMOS QUE REINICIE SEU SERVIDOR"
 echo "                        DESEJA REINICIAR SEU SERVIDOR ?"
 echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA E "
 echo "                               DESEJA \033[01;32m2\033[01;37m PARA SAIR"
-echo "                        DIGITE A OPÇÃO E APERTE ENTER"
+echo "                        DIGITE A OPÇÃO E APERTE \033[01;32mENTER\033[01;37m"
 echo ""
 read n
 case $n in
@@ -72,7 +72,7 @@ echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
 echo "                         VAMOS REINICIAR SEU SISTEMA!"
-echo "                        YHOST AGRADECE A PREFERENCIA!!"
+echo "                        \033[01;32mYHOST\033[01;37m AGRADECE A PREFERENCIA!!"
 reboot -n
 ;;
   2)
@@ -84,7 +84,7 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
-echo "                        YHOST AGRADECE A PREFERENCIA!!"
+echo "                        \033[01;32mYHOST\033[01;37m AGRADECE A PREFERENCIA!!"
 ;;
 esac
 sleep 3
