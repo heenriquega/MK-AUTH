@@ -54,6 +54,37 @@ echo "                          |_| |_| |_|\___/|____/ |_| "
 echo ""
 echo ""
 echo "                         FINALIZANDO POR FAVOR AGUARDE"
+echo "                    RECOMENDAMOS QUE REINICIE SEU SERVIDOR"
+echo "                        DESEJA REINICIAR SEU SERVIDOR ?"
+echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA E "
+echo "                               DESEJA \033[01;32m2\033[01;37m PARA SAIR"
 echo ""
+read n
+case $n in
+  1) 
+clear
+echo "                        __   ___   _  ___  ____ _____ "
+echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
+echo "                         \ V /| |_| | | | \___ \ | | "
+echo "                          | | |  _  | |_| /___) || | "
+echo "                          |_| |_| |_|\___/|____/ |_| "
+echo ""
+echo ""
+echo "                         VAMOS REINICIAR SEU SISTEMA!"
+echo "                        YHOST AGRADECE A PREFERENCIA!!"
+reboot -n
+;;
+  2)
+clear
+echo "                        __   ___   _  ___  ____ _____ "
+echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
+echo "                         \ V /| |_| | | | \___ \ | | "
+echo "                          | | |  _  | |_| /___) || | "
+echo "                          |_| |_| |_|\___/|____/ |_| "
+echo ""
+echo ""
+echo "                        YHOST AGRADECE A PREFERENCIA!!"
+;;
+esac
 sleep 3
 clear
