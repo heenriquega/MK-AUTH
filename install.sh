@@ -53,7 +53,27 @@ echo "                          | | |  _  | |_| /___) || | "
 echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
 echo ""
 echo ""
+echo "                         \033[01;32mALTERANDO CAMINHO DO SISTEMA\033[01;37m"
+echo ""
+sleep 3
+cd /opt/mk-auth/include
+sed -i '3,6s/admin/sistema/' configure.php
+sleep 1
+cd /etc/apache2/conf-enabled/
+sed -i '3d' webadmin.conf
+sleep 1
+sed -i '3s/^/Alias \/sistema \/opt\/mk-auth\/admin\/ /' webadmin.conf
+clear
+echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
+echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
+echo "                         \ V /| |_| | | | \___ \ | | "
+echo "                          | | |  _  | |_| /___) || | "
+echo "                          |_| |_| |_|\___/|____/ |_| \033[00;37m"
+echo ""
+echo ""
 echo "                                  FINALIZADO!"
+echo "                  AGORA PARA ACESSAR SEU SISTEMA USE /SISTEMA"
+echo "                                  SEU ACESSO FICOU ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'/sistema!"
 echo "                    RECOMENDAMOS QUE REINICIE SEU SERVIDOR"
 echo "                        DESEJA REINICIAR SEU SERVIDOR ?"
 echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA E "
@@ -62,7 +82,7 @@ echo "                        DIGITE A OPÇÃO E APERTE \033[01;32mENTER\033[01;
 echo ""
 read n
 case $n in
-  1) 
+  1)
 clear
 echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
