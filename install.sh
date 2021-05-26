@@ -2,6 +2,7 @@
 clear
 cron1="0 3,15 * * * /opt/mk-auth/admin/scripts/new_version.sh"
 cron2="0 0 1 * * /opt/mk-auth/admin/scripts/limpa_logs.sh"
+ip="$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
 
 echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
@@ -62,7 +63,8 @@ sleep 1
 cd /etc/apache2/conf-enabled/
 sed -i '3d' webadmin.conf
 sleep 1
-sed -i '3s/^/Alias \/sistema \/opt\/mk-auth\/admin\/ /' webadmin.conf
+sed -i '3s/^/Alias \/sistema \/opt\/mk-auth\/admin\/\n /' webadmin.conf
+service apache2 restart
 clear
 echo "\033[05;31m                        __   ___   _  ___  ____ _____ "
 echo "                        \ \ / / | | |/ _ \/ ___|_   _| "
@@ -73,11 +75,14 @@ echo ""
 echo ""
 echo "                                  FINALIZADO!"
 echo "                  AGORA PARA ACESSAR SEU SISTEMA USE /SISTEMA"
-echo "                                  SEU ACESSO FICOU ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'/sistema!"
+echo "                    EU ACESSO FICOU \033[01;32m$ip/sistema\033[01;37m!"
+echo ""
 echo "                    RECOMENDAMOS QUE REINICIE SEU SERVIDOR"
 echo "                        DESEJA REINICIAR SEU SERVIDOR ?"
-echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA E "
-echo "                               DESEJA \033[01;32m2\033[01;37m PARA SAIR"
+echo ""
+echo "                            DIGITE \033[01;32m1\033[01;37m PARA REINICIA"
+echo "                            DIGITE \033[01;32m2\033[01;37m PARA SAIR"
+echo ""
 echo "                        DIGITE A OPÇÃO E APERTE \033[01;32mENTER\033[01;37m"
 echo ""
 read n
