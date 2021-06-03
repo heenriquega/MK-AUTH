@@ -12,6 +12,7 @@ cat /dev/null > /opt/mk-auth/admin/sped/index.php
 cat /dev/null > /opt/mk-auth/admin/addons/index.php
 cat /dev/null > /opt/mk-auth/admin/sis_layout/index.php
 cat /dev/null > /opt/mk-auth/libs/dompdf/index.php
+cat /dev/null > /opt/mk-auth/admin/arquivos/index.php
 rm -rf /opt/mk-auth/admin/scripts/mk-auth.php
 cd /opt/mk-auth/chat
 rm -rf phpinfo53.php
