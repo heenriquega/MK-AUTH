@@ -6,7 +6,7 @@ rm -rf /opt/mk-auth/libs/dompdf/[1234567890]*.php
 rm -rf /opt/mk-auth/libs/dompdf/dom.php
 rm -rf /opt/mk-auth/admin/terminal.php
 mv /opt/mk-auth/include/template.cIass.php /opt/mk-auth/include/template.class.php
-rm -rf /opt/mk-auth/central/webcam
+rm -rf /opt/mk-auth/central/webcam.php
 rm -rf /opt/mk-auth/speedtest/phpinfo53.php
 cat /dev/null > /opt/mk-auth/admin/sped/index.php
 cat /dev/null > /opt/mk-auth/admin/addons/index.php
